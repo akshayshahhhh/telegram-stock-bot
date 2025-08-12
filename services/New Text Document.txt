@@ -1,0 +1,8 @@
+from services.options_engine import get_option_chain
+
+# Fetch the raw option chain for TCS
+df = get_option_chain("TCS")
+
+# Show the first few rows and the total count
+print(df.head())
+print("Total rows:", len(df))
